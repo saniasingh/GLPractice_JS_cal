@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculate</title>
+    <script src="index.js"></script>
+    <style>
+      section {
+        margin: 30px auto;
+      }
+      .container {
+        padding: 60px auto;
+      }
+
+      input {
+        font-size: medium;
+        width: 130px;
+        height: 40px;
+        padding: 0 10px;
+        border-width: 2px;
+        border-radius: 8px;
+      }
+
+      select {
+        font-size: medium;
+        height: 43px;
+        width: 43px;
+        border: 2px solid black;
+        border-radius: 8px;
+      }
+
+      button {
+        background-color: black;
+        padding: 0 10px;
+        height: 43px;
+        width: 43px;
+        color: white;
+        font-weight: 700;
+        border-radius: 8px;
+      }
+
+      span {
+        border: 2px solid black;
+        margin: 0 10px;
+        font-weight: 700;
+
+        border-radius: 8px;
+        padding: 10px 40px;
+        height: 43px;
+        width: 43px;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h2>Fill all the below fields</h2>
+      <input type="number" placeholder="num2" id="op1" />
+      <select id="operator">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+      </select>
+      <input type="number" placeholder="num1" id="op2" required />
+      <button type="button" onclick="takeInput()">=</button>
+      <span id="result1"></span>
+      <br />
+      <br />
+      <h2>Enter the Complete Expression Below</h2>
+      <input type="text" id="exp" placeholder="expression" required />
+      <button type="button" onclick="eval_value()">=</button>
+      <span id="result2"></span>
+    </section>
+  </body>
+</html>
